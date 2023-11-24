@@ -48,7 +48,7 @@ impl Prover {
             let result = proof.protocol == self.chunk_protocol;
             if !result {
                 log::error!(
-                    "Non-match protocol of chunk-proof index-{}: expected = {:x}, actual = {:x}",
+                    "Nonmatch protocol of chunk-proof index-{}: expected = {:x}, actual = {:x}",
                     i,
                     Sha256::digest(&self.chunk_protocol),
                     Sha256::digest(&proof.protocol),
